@@ -35,7 +35,7 @@ def register_blueprints(app):
     app.register_blueprint(controllers.lmap.blueprint)
     app.register_blueprint(controllers.chatbot.blueprint)
     app.register_blueprint(controllers.contact.blueprint)
-    #app.register_blueprint(controllers.about.blueprint)
+    app.register_blueprint(controllers.about.blueprint)
     app.register_blueprint(controllers.dev.blueprint)
     app.register_blueprint(controllers.dash.blueprint)
     
