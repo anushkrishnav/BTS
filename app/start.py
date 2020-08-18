@@ -1,7 +1,7 @@
 import os
 
 from flask import Flask, render_template
-from . import settings, controllers, models
+from . import settings, controllers
 from .extensions import db
 from .settings import SECRET_KEY
 
@@ -9,7 +9,7 @@ project_dir = os.path.dirname(os.path.abspath(__file__))
 
 
 def create_app(config_object=settings):
-    # create and configure the app
+    ''' create and configure the app'''
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_object(config_object)
     app.secret_key=SECRET_KEY
@@ -31,7 +31,6 @@ def register_extensions(app):
 def register_blueprints(app):
     """Register Flask blueprints."""
     app.register_blueprint(controllers.home.blueprint)
-    app.register_blueprint(controllers.auth.blueprint)
     app.register_blueprint(controllers.lmap.blueprint)
     app.register_blueprint(controllers.chatbot.blueprint)
     app.register_blueprint(controllers.contact.blueprint)

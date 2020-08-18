@@ -1,5 +1,4 @@
 """Controllers package"""
-from . import auth
 from . import lmap
 from . import home
 from . import dash
