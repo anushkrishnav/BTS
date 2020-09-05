@@ -1,7 +1,7 @@
 {
-  "name": "MLH Hackathon Flask Starter",
+  "name": "Back To Schoolr",
   "description": "A hackathon starting point for new Flask applications",
-  "repository": "https://github.com/MLH/mlh-hackathon-flask-starter.git",
-  "logo": "https://avatars1.githubusercontent.com/u/5752708?s=100",
+  "repository": "",
+  "logo": "",
   "keywords": ["python", "flask"]
 }

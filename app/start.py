@@ -31,12 +31,6 @@ def register_extensions(app):
 def register_blueprints(app):
     """Register Flask blueprints."""
     app.register_blueprint(controllers.home.blueprint)
-    app.register_blueprint(controllers.lmap.blueprint)
-    app.register_blueprint(controllers.chatbot.blueprint)
-    app.register_blueprint(controllers.contact.blueprint)
-    app.register_blueprint(controllers.about.blueprint)
-    app.register_blueprint(controllers.dev.blueprint)
-    app.register_blueprint(controllers.dash.blueprint)
     
     return None
 
